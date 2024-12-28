@@ -1,0 +1,27 @@
+<form [formGroup]="cardForm" (ngSubmit)="submitForm()">
+  <div>
+    <label for="id">ID:</label>
+    <input id="id" formControlName="id" />
+    <div *ngIf="cardForm.get('id')?.invalid && cardForm.get('id')?.touched">
+      ID é obrigatório.
+    </div>
+  </div>
+
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" />
+    <div *ngIf="cardForm.get('name')?.invalid && cardForm.get('name')?.touched">
+      Nome é obrigatório e deve ter pelo menos 3 caracteres.
+    </div>
+  </div>
+
+  <div>
+    <label for="value">Value:</label>
+    <input id="value" formControlName="value" type="number" />
+    <div *ngIf="cardForm.get('value')?.invalid && cardForm.get('value')?.touched">
+      Valor deve ser maior que 0.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="cardForm.invalid">Salvar Card</button>
+</form>

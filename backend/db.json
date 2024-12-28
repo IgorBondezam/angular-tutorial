@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "id": "1",
+      "name": "a title",
+      "value": 100
+    },
+    {
+      "id": "2",
+      "name": "another title",
+      "value": 200
+    },
+    {
+      "id": "3",
+      "name": "AAAABBBB",
+      "value": 666
+    }
+  ]
+}

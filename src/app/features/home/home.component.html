@@ -1,0 +1,27 @@
+<p>home works!</p>
+
+<ng-container>
+<!--  ng-container é como uma div, feito para agrupar, porém diferente da div ele não aparece no DOM, ou seja, é bom para usar ngIf ou ngFor por não gerar nada no DOM e mesmo assim manter a funcionalidade-->
+  <app-input/>
+  <app-button/>
+  <app-text/>
+  <app-text [isToShow]="false"/>
+
+  <app-angular-template></app-angular-template>
+  <app-angular-template [normalElement]="false"></app-angular-template>
+
+  <app-angular-content>
+    <p>Adicionando valor para dentro do component, conteúdo do component</p>
+  </app-angular-content>
+
+  <app-angular-content>
+    <p>Adicionando valor para dentro do component, conteúdo do component</p>
+  </app-angular-content>
+
+  <app-angular-content [exibirOutros]="true">
+    <h2 content-1>Content 1</h2>
+    <h3 content-2>Content 2</h3>
+  </app-angular-content>
+
+
+</ng-container>

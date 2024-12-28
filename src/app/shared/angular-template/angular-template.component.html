@@ -1,0 +1,7 @@
+<ng-container *ngIf="normalElement else myFragment">
+  <p>This is a normal element</p>
+</ng-container>
+
+<ng-template #myFragment>
+  <p>This is a fragment</p>
+</ng-template>

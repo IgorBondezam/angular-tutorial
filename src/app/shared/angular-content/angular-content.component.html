@@ -1,0 +1,9 @@
+<ng-container>
+  <ng-content></ng-content>
+</ng-container>
+
+<ng-container *ngIf="exibirOutros">
+  <ng-content select="[content-1]"></ng-content>
+  <div>SEPARADOOOOOOOOOOR</div>
+  <ng-content select="[content-2]"></ng-content>
+</ng-container>
