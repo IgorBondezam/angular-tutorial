@@ -1,10 +1,10 @@
 {
-  "payload-type": "description",
+  "payload-type": "title",
   "endpoint": "http://model:8000/models/Model1_IssueTracker_Li2022_ESEM",
   "label-location": "label",
-  "auto-label": false,
+  "auto-label": true,
   "initial-message": true,
-  "send-emails": false,
+  "send-emails": true,
   "when-to-send": "all",
   "email-info": {
     "which-labels": "specific",
@@ -13,8 +13,7 @@
     "lingering-mode": "last-modified",
     "feature-under-development": "automation",
     "recipients" : [
-      "recipient1@email.com",
-      "recipient2@email.com"
+      "testeiarogi@gmail.com",
     ],
     "email-body-template": {
       "label": "Hi,\n\n/issue_label has been identified in issue #/issue_number with title: '/issue_title' and description: '/issue_description', created by @/issue_author in the /issue_repository repository.\nLink to the issue: /issue_link\n\nThis is an automated email. Replies to this message will not be read.",
